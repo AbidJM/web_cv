@@ -1,0 +1,79 @@
+            :root {
+                --warna-bg-utama: #ffbe58;   /* Oranye/Krem terang */
+                --warna-header: #ffa834;     /* Oranye lebih tua */
+                --warna-garis: #000000;      /* Hitam untuk border */
+            }
+
+            body {
+                background-color: #f8f9fa; /* Warna dasar luar agar CV terlihat menonjol */
+            }
+
+            /* Mengatur agar halaman CV tidak terlalu banyak membuang ruang putih di kiri-kanan */
+            .cv-wrapper {
+                max-width: 1200px; /* Lebar maksimal diperbesar agar area putih luar mengecil */
+                margin: 20px auto;
+                background-color: var(--warna-bg-utama);
+                box-shadow: 0px 4px 20px 20px rgba(0,0,0,0.08);
+                border-radius: 8px;
+                overflow: hidden;
+            }
+
+            /* Header Custom */
+            .custom-header {
+                background-color: var(--warna-header);
+                padding: 30px 40px;
+            }
+
+            .profile-img {
+                width: 110px;
+                height: 110px;
+                background-color: #cde4f9;
+                object-fit: cover;
+            }
+
+            /* Style Ikon Sosial Media Kotak */
+            .social-box {
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                width: 32px;
+                height: 32px;
+                color: #fff;
+                text-decoration: none;
+                font-weight: bold;
+                border-radius: 4px;
+                margin-left: 5px;
+                font-size: 14px;
+            }
+            .bg-linkedin { background-color: #0077b5; }
+            .bg-email { background-color: #333333; }
+            .bg-instagram { background-color: #e1306c; }
+
+            /* Kustomisasi Tabel & List agar presisi seperti gambar */
+            .table-custom {
+                border: 1px solid var(--warna-garis);
+            }
+            .table-custom th {
+                background-color: #121420 !important;
+                color: #ffffff;
+                border: 1px solid var(--warna-garis);
+            }
+            .table-custom td {
+                border: 1px solid var(--warna-garis);
+                background-color: transparent !important;
+            }
+
+            /* List dengan border kotak hitam */
+            .list-custom .list-group-item {
+                background-color: transparent;
+                border: 1px solid var(--warna-garis);
+                margin-bottom: -1px; /* Mencegah double border */
+                color: #000;
+            }
+
+            /* Gambar Sertifikat */
+            .img-cert {
+                border: 1px solid var(--warna-garis);
+                max-width: 100%;
+                height: auto;
+            }
